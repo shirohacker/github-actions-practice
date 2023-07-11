@@ -20,5 +20,5 @@ jobs:
       - name: Download Result File
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: bob
+          name: python_${{ matrix.python-version }}
           path: python_${{ matrix.python-version }}.txt
